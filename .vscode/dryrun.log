@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rain/code/my-redpill'
+make: Leaving directory '/home/rain/code/my-redpill'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
