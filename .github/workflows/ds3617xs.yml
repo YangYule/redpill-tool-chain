@@ -1,4 +1,4 @@
-name: 构建
+name: DS3617 构建
 
 on:
   workflow_dispatch:
@@ -102,10 +102,9 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-acpid.json
           ./redpill_tool_chain.sh add https://github.com/tossp/redpill-tool-chain/raw/master/extensions/redpill-virtio.json
 
-      - name: Esxi Driver
+      - name: Esxi虚拟网卡驱动
         run: |
-          ./redpill_tool_chain.sh add https://github.com/pocopico/rp-ext/blob/main/vmxnet3/rpext-index.json
-
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/main/vmxnet3/rpext-index.json
 
       # - name: 添加扩展驱动[dva3221]
       #   if: matrix.platform == 'dva3221'
